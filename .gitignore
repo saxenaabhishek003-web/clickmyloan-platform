@@ -1,0 +1,25 @@
+# Large media files (exceed GitHub 100MB limit)
+*.mp4
+*.zip
+
+# Build output
+dist/
+
+# Logs & temp files
+*.log
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Legacy portfolio assets
+Abhishek_Saxena_Resume.pdf
+PortfolioServer.java
+project-*.png
+ezgif-*
+public/Abhishek_Saxena_Resume.pdf
+public/project-*.png
+public/ezgif-*
+assets/abhishek-portrait.jpg
+assets/hero-abhishek.jpg
+public/assets/abhishek-portrait.jpg
+public/assets/hero-abhishek.jpg

@@ -1,0 +1,9 @@
+# ClickMyLoan Robots.txt
+# Technical SEO compliance - Disallows private application states
+
+User-agent: *
+Allow: /
+Disallow: /apply?*
+Disallow: /api/
+
+Sitemap: https://clickmyloan.com/sitemap.xml

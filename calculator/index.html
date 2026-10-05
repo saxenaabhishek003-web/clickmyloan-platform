@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart EMI & Loan Eligibility Calculator | ClickMyLoan</title>
+  <meta name="description" content="Calculate your monthly loan EMI, total interest, and complete amortization schedule online. Free interactive financial calculator for personal, business & travel loans.">
+  <link rel="canonical" href="https://clickmyloan.com/calculator">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ClickMyLoan">
+  <meta property="og:title" content="Smart EMI & Loan Eligibility Calculator | ClickMyLoan">
+  <meta property="og:description" content="Calculate your monthly loan EMI, total interest, and complete amortization schedule online. Free interactive financial calculator for personal, business & travel loans.">
+  <meta property="og:url" content="https://clickmyloan.com/calculator">
+  <meta property="og:image" content="https://clickmyloan.com/public/assets/clickmyloan-og.svg">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smart EMI & Loan Eligibility Calculator | ClickMyLoan">
+  <meta name="twitter:description" content="Calculate your monthly loan EMI, total interest, and complete amortization schedule online. Free interactive financial calculator for personal, business & travel loans.">
+  <meta name="twitter:image" content="https://clickmyloan.com/public/assets/clickmyloan-og.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+  <!-- Main Stylesheet (Resolves in both HTTP server and direct file:// opening) -->
+  <link rel="stylesheet" href="../public/css/style.css">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://clickmyloan.com"},{"@type":"ListItem","position":2,"name":"EMI Calculator","item":"https://clickmyloan.com/calculator"}]}</script>
+</head>
+<body class="has-mobile-cta">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  
+    <div class="header-top-bar">
+      <div class="container header-top-inner">
+        <div class="top-bar-left">
+          <span class="top-bar-badge"><span class="pulse-indicator"></span> RBI Regulated NBFC Lending Partners</span>
+          <span class="top-bar-divider">&bull;</span>
+          <span class="top-bar-item">100% Digital &amp; Paperless</span>
+          <span class="top-bar-divider">&bull;</span>
+          <span class="top-bar-item">Zero Advance Fees</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="tel:18002667890" class="top-bar-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <span>Toll-Free: 1800-266-7890</span>
+          </a>
+          <span class="top-bar-divider">|</span>
+          <a href="/faq" class="top-bar-link">Support &amp; FAQs</a>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      
+    <a href="/" class="brand-logo" aria-label="ClickMyLoan Homepage">
+      <img src="../assets/logo.png" alt="ClickMyLoan" class="brand-logo-img" width="160" height="58">
+    </a>
+  
+
+      <!-- Desktop Categorized Navigation (Section 3 Specification) -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="/" class="nav-link ">Home</a>
+
+        <!-- Loans Dropdown -->
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-trigger " aria-expanded="false" aria-haspopup="true">
+            <span>Loans</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="/personal-loan" class="dropdown-item " role="menuitem">
+              <div class="dropdown-item-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+              <div class="dropdown-item-content">
+                <span class="dropdown-item-title">Personal Loan</span>
+                <p class="dropdown-item-desc">Digital personal credit up to ₹5 Lakh</p>
+              </div>
+            </a>
+            <a href="/business-loan" class="dropdown-item " role="menuitem">
+              <div class="dropdown-item-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="dropdown-item-content">
+                <span class="dropdown-item-title">Business Loan</span>
+                <p class="dropdown-item-desc">Working capital for MSMEs &amp; proprietors</p>
+              </div>
+            </a>
+            <a href="/travel-loan" class="dropdown-item " role="menuitem">
+              <div class="dropdown-item-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></div>
+              <div class="dropdown-item-content">
+                <span class="dropdown-item-title">Travel Loan</span>
+                <p class="dropdown-item-desc">Flexible vacation &amp; emergency travel credit</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link nav-dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+            <span>Resources</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown-menu nav-dropdown-rich tools-dropdown" role="menu">
+            <div class="dropdown-rich-grid">
+              <a href="/calculator" class="dropdown-rich-item is-active" role="menuitem">
+                <div class="dropdown-item-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">Loan Calculator</span>
+                    <span class="dropdown-item-badge">Interactive</span>
+                  </div>
+                  <p class="dropdown-item-desc">Daily ROI, monthly EMI &amp; net disbursal</p>
+                </div>
+              </a>
+
+              <a href="/how-it-works" class="dropdown-rich-item " role="menuitem">
+                <div class="dropdown-item-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">How It Works</span>
+                  </div>
+                  <p class="dropdown-item-desc">Simple 3-step digital journey</p>
+                </div>
+              </a>
+
+              <a href="/eligibility" class="dropdown-rich-item " role="menuitem">
+                <div class="dropdown-item-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">Loan Eligibility</span>
+                  </div>
+                  <p class="dropdown-item-desc">Objective eligibility parameters &amp; limits</p>
+                </div>
+              </a>
+
+              <a href="/fees-and-charges" class="dropdown-rich-item " role="menuitem">
+                <div class="dropdown-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">Fees &amp; Charges</span>
+                    <span class="dropdown-item-badge">Transparent</span>
+                  </div>
+                  <p class="dropdown-item-desc">8.99% PF, 0% foreclosure, clear daily ROI</p>
+                </div>
+              </a>
+
+              <a href="/documents" class="dropdown-rich-item " role="menuitem">
+                <div class="dropdown-item-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">Documents Required</span>
+                    <span class="dropdown-item-badge">Paperless</span>
+                  </div>
+                  <p class="dropdown-item-desc">PAN, Aadhaar &amp; bank statement checklist</p>
+                </div>
+              </a>
+
+              <a href="/faq" class="dropdown-rich-item " role="menuitem">
+                <div class="dropdown-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">FAQs</span>
+                  </div>
+                  <p class="dropdown-item-desc">Verified answers &amp; lending guidelines</p>
+                </div>
+              </a>
+
+              <a href="/grievance-redressal" class="dropdown-rich-item" role="menuitem">
+                <div class="dropdown-item-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">Grievance Redressal</span>
+                  </div>
+                  <p class="dropdown-item-desc">Principal Grievance Officer contacts</p>
+                </div>
+              </a>
+
+              <a href="/blog" class="dropdown-rich-item " role="menuitem">
+                <div class="dropdown-item-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-title-row">
+                    <span class="dropdown-item-title">Financial Guides</span>
+                  </div>
+                  <p class="dropdown-item-desc">CIBIL score &amp; responsible borrowing articles</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/about-us" class="nav-link ">About Us</a>
+        <a href="/contact-us" class="nav-link ">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/apply" class="btn btn-primary btn-sm header-cta" data-track="cta_click" data-track-label="Header Apply Now">
+          <span>Apply Now</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      
+    <a href="/" class="brand-logo" aria-label="ClickMyLoan Homepage">
+      <img src="../assets/logo.png" alt="ClickMyLoan" class="brand-logo-img" width="160" height="58">
+    </a>
+  
+      <button class="mobile-drawer-close" id="mobile-menu-close" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-scroll">
+      <!-- Main Recommended Navigation Links -->
+      <div class="mobile-nav-group">
+        <div class="mobile-group-title">Navigation</div>
+        <ul class="mobile-simple-links">
+          <li><a href="/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>Home</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/personal-loan"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> <span>Personal Loan</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/how-it-works"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span>How It Works</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/eligibility"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> <span>Eligibility</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/about-us"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> <span>About Us</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/faq"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> <span>FAQs</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/contact-us"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <span>Contact Us</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+        </ul>
+      </div>
+
+      <!-- Tools & Calculators -->
+      <div class="mobile-nav-group">
+        <div class="mobile-group-title">Tools &amp; Transparency</div>
+        <ul class="mobile-simple-links">
+          <li><a href="/calculator"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg> <span>Loan Calculator (Daily / EMI)</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/documents"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> <span>Required Documents</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/fees-and-charges"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg> <span>Fees &amp; Charges (8.99% PF, 0% FC)</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/grievance-redressal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> <span>Grievance Redressal</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          <li><a href="/blog"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> <span>Education Guides</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <a href="/apply" class="btn btn-primary btn-block btn-lg" data-track="cta_click" data-track-label="Mobile Drawer Apply">
+        Apply Now
+      </a>
+      <div class="mobile-drawer-trust">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> <span>Up to ₹5 Lakh &bull; 0% Foreclosure Charges*</span>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+
+  
+      <nav aria-label="Breadcrumb" class="breadcrumbs">
+        <div class="container">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><span class="breadcrumb-separator">/</span> <span aria-current="page">EMI Calculator</span></li>
+          </ol>
+        </div>
+      </nav>
+    
+
+  <!-- Main Body Content -->
+  <main id="main-content">
+    
+    <section class="section-tight" style="background:linear-gradient(135deg, #FF5E00 0%, #EA580C 50%, #C2410C 100%); color:#fff; text-align:center; padding:56px 0;">
+      <div class="container">
+        <span class="section-pill" style="background:rgba(255,255,255,0.2); color:#FFFFFF;">Financial Planning Tool</span>
+        <h1 style="color:#fff; margin:12px 0 16px; font-size:clamp(2rem, 3.5vw, 3rem);">Smart EMI & Loan Calculator</h1>
+        <p style="color:#FFF4ED; font-size:1.1rem; max-width:640px; margin:0 auto;">
+          Accurately calculate your monthly installment (EMI), total interest, and full repayment schedule. Switch between Personal, Business, and Travel loan presets.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        
+    <div class="calc-wrapper" id="emi-calculator">
+      <div class="calc-nav-tabs">
+        <button type="button" class="calc-tab-btn active" data-product="short-term">
+          Daily ROI Loan (Up to ₹5 Lakh)
+        </button>
+        <button type="button" class="calc-tab-btn" data-product="personal">
+          Monthly EMI Option
+        </button>
+      </div>
+
+      <div class="calc-body">
+        <div class="calc-inputs">
+          <!-- Loan Amount -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <label for="calc-amount-slider" class="calc-label">Required Loan Amount</label>
+              <div class="calc-value-display">
+                <span>₹</span>
+                <input type="number" id="calc-amount-input" value="50000" min="10000" max="500000" step="5000" aria-label="Loan Amount in Rupees">
+              </div>
+            </div>
+            <input type="range" class="range-slider" id="calc-amount-slider" min="10000" max="500000" step="5000" value="50000" aria-label="Loan Amount Slider">
+            <div class="range-limits">
+              <span id="calc-amount-min">₹10,000</span>
+              <span id="calc-amount-max">₹5,00,000</span>
+            </div>
+          </div>
+
+          <!-- Interest Rate -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <label for="calc-rate-slider" class="calc-label" id="calc-rate-label">Applicable Interest Rate (% per day)</label>
+              <div class="calc-value-display">
+                <input type="number" id="calc-rate-input" value="0.5" min="0.2" max="1.0" step="0.05" aria-label="Daily Interest Rate Percentage">
+                <span id="calc-rate-unit">%/day</span>
+              </div>
+            </div>
+            <input type="range" class="range-slider" id="calc-rate-slider" min="0.2" max="1.0" step="0.05" value="0.5" aria-label="Interest Rate Slider">
+            <div class="range-limits">
+              <span id="calc-rate-min">0.2% / day</span>
+              <span id="calc-rate-max">1.0% / day</span>
+            </div>
+          </div>
+
+          <!-- Tenure -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <label for="calc-tenure-slider" class="calc-label" id="calc-tenure-label">Repayment Tenure (Days)</label>
+              <div class="calc-value-display">
+                <input type="number" id="calc-tenure-input" value="30" min="15" max="180" step="5" aria-label="Loan Tenure">
+                <span id="calc-tenure-unit">Days</span>
+              </div>
+            </div>
+            <input type="range" class="range-slider" id="calc-tenure-slider" min="15" max="180" step="5" value="30" aria-label="Tenure Slider">
+            <div class="range-limits">
+              <span id="calc-tenure-min">15 Days</span>
+              <span id="calc-tenure-max">180 Days</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Summary -->
+        <div class="calc-summary-card">
+          <div class="calc-emi-badge" id="calc-badge-title">Estimated Daily Repayment</div>
+          <div class="calc-emi-amount tabular-nums" id="calc-monthly-emi">₹1,917</div>
+          <div style="font-size:0.8rem; color:var(--c-text-muted); margin-bottom:12px;" id="calc-repay-sub">
+            per day for <span id="calc-tenure-summary-days">30</span> days
+          </div>
+
+          <!-- Visual SVG Donut Chart -->
+          <div class="chart-container" aria-hidden="true">
+            <svg class="donut-svg" viewBox="0 0 180 180">
+              <circle class="donut-bg" cx="90" cy="90" r="70"></circle>
+              <circle class="donut-segment-principal" id="donut-segment-principal" cx="90" cy="90" r="70"></circle>
+              <circle class="donut-segment-interest" id="donut-segment-interest" cx="90" cy="90" r="70"></circle>
+            </svg>
+          </div>
+
+          <div class="calc-stats-breakdown">
+            <div class="stat-row">
+              <span class="stat-label-wrap">
+                <span class="stat-dot principal"></span> Principal Amount
+              </span>
+              <span class="stat-val tabular-nums" id="calc-principal-display">₹50,000</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label-wrap">
+                <span class="stat-dot interest"></span> Estimated Interest
+              </span>
+              <span class="stat-val tabular-nums" id="calc-interest-display">₹7,500</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label-wrap">
+                <span class="stat-dot" style="background:#0284C7;"></span> Processing Fee (8.99%)
+              </span>
+              <span class="stat-val tabular-nums" id="calc-pf-display">₹4,495</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label-wrap">
+                <span class="stat-dot" style="background:#9333EA;"></span> GST on PF (18%)
+              </span>
+              <span class="stat-val tabular-nums" id="calc-gst-display">₹809</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label-wrap">
+                <span class="stat-dot" style="background:#10B981;"></span> Estimated Disbursed Amount
+              </span>
+              <span class="stat-val tabular-nums" id="calc-disbursed-display" style="color:#34D399; font-weight:700;">₹44,696</span>
+            </div>
+            <div class="stat-row" style="font-weight:700; border-top:1px dashed #334155; padding-top:10px; margin-top:4px;">
+              <span class="stat-label-wrap" style="color:#FFFFFF; font-size:1.05rem;">Total Repayment</span>
+              <span class="stat-val tabular-nums" id="calc-total-display" style="color:#FFFFFF; font-size:1.25rem; font-weight:800;">₹57,500</span>
+            </div>
+          </div>
+
+          <a href="/apply" class="btn btn-primary btn-block btn-lg" style="background:#FF5E00; color:#FFFFFF; font-weight:800; border:none; box-shadow:0 4px 14px rgba(255, 94, 0, 0.45); padding:14px;" data-track="cta_click" data-track-label="Calculator Check Eligibility">
+            Check My Eligibility &rarr;
+          </a>
+
+          <p class="calc-disclaimer" style="color:#94A3B8; font-size:0.775rem; line-height:1.5; margin-top:16px;">
+            Illustrative estimate only. Final loan terms, charges and repayment amount will be disclosed before acceptance. Loan amount, interest rate, tenure, processing fee and other charges are subject to customer eligibility, credit assessment, lender policy and the applicable loan agreement/KFS.
+          </p>
+        </div>
+      </div>
+
+      <!-- Repayment Schedule Accordion -->
+      <div class="amortization-section">
+        <div class="amortization-header">
+          <h4 style="font-size:1.05rem; color:var(--c-text-main);">Detailed Repayment Schedule</h4>
+          <button type="button" class="btn btn-secondary btn-sm" id="toggle-amortization-btn">
+            View Schedule Breakdown
+          </button>
+        </div>
+
+        <div id="amortization-schedule-wrap" hidden>
+          <div class="amortization-table-wrap">
+            <table class="fin-table">
+              <thead>
+                <tr>
+                  <th>Period</th>
+                  <th>Principal Paid</th>
+                  <th>Interest Paid</th>
+                  <th>Total Installment</th>
+                  <th>Remaining Balance</th>
+                </tr>
+              </thead>
+              <tbody id="amortization-tbody" class="tabular-nums">
+                <!-- Dynamically populated by calculator.js -->
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:0.75rem; color:var(--c-text-subtle); margin-top:8px;">
+            Schedule demonstrates indicative repayment breakdown. 0% Foreclosure Charges apply for early settlement at any time.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+
+        <!-- Educational Explanation on EMI Formulation -->
+        <div style="background:#fff; border:1px solid var(--c-border); border-radius:16px; padding:36px; margin-top:48px;">
+          <h2 style="font-size:1.5rem; margin-bottom:16px;">How Is Loan EMI Calculated?</h2>
+          <p style="margin-bottom:16px;">
+            An Equated Monthly Installment (EMI) consists of two components: the principal repayment and the interest charged on the reducing outstanding balance. In the initial months of the loan tenure, interest accounts for a higher portion of each EMI. Over time, as the principal balance decreases, the interest component decreases and principal repayment accelerates.
+          </p>
+          <div style="background:var(--c-bg-subtle); padding:20px; border-radius:10px; border-left:4px solid var(--c-accent); font-family:var(--font-mono); font-size:0.95rem; margin-bottom:20px;">
+            <strong>Standard Reducing Balance Formula:</strong><br>
+            EMI = [P &times; r &times; (1 + r)^n] / [(1 + r)^n - 1]<br><br>
+            Where:<br>
+            <strong>P</strong> = Principal Loan Amount<br>
+            <strong>r</strong> = Monthly Interest Rate (Annual Rate &divide; 12 &divide; 100)<br>
+            <strong>n</strong> = Loan Tenure in Months
+          </div>
+
+          <h3 style="font-size:1.2rem; margin:24px 0 12px;">Factors That Influence Your Loan EMI:</h3>
+          <ul style="padding-left:24px; color:var(--c-text-muted); line-height:1.7;">
+            <li><strong>Loan Amount:</strong> Higher principal increases both the monthly installment and cumulative interest paid.</li>
+            <li><strong>Interest Rate:</strong> Driven by your credit score tier, debt-to-income ratio, and lending partner assessment. Lower rates dramatically reduce your overall repayment.</li>
+            <li><strong>Tenure:</strong> Choosing a longer tenure lowers your monthly EMI but increases the total interest paid over the life of the loan. A shorter tenure increases monthly cash outflow but maximizes interest savings.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- Mobile Sticky Bottom CTA -->
+  
+  <div class="mobile-sticky-cta" aria-label="Quick Actions">
+    <a href="/calculator" class="btn btn-secondary" data-track="cta_click" data-track-label="Mobile Sticky Calculator">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg> Calculate
+    </a>
+    <a href="/apply" class="btn btn-primary" data-track="cta_click" data-track-label="Mobile Sticky Apply">
+      Apply Now
+    </a>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary Column -->
+        <div class="footer-col-brand">
+          <div class="footer-brand-title">
+            <a href="/" aria-label="ClickMyLoan Homepage" class="footer-brand-logo">
+              <div class="footer-logo-wrap">
+                <img src="../assets/logo.png" alt="ClickMyLoan" class="footer-logo-img" width="140" height="50">
+              </div>
+            </a>
+          </div>
+          <p class="footer-desc">
+            ClickMyLoan is a modern, transparent digital lending platform providing eligible Indian borrowers with short-term personal loans up to ₹5,00,000 in partnership with regulated banks and RBI-registered NBFCs. We champion ethical lending, 0% foreclosure charges, and transparent pricing.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:6px; font-size:0.85rem; color:#94A3B8;">
+            <p style="color:#CBD5E1;"><strong>Customer Care:</strong> care@clickmyloan.com</p>
+            <p style="color:#CBD5E1;"><strong>Toll-Free Helpline:</strong> 1800-266-7890</p>
+            <p>Mon - Sat: 9:30 AM to 6:30 PM (IST)</p>
+          </div>
+        </div>
+
+        <!-- Column 1: Company -->
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/how-it-works">How It Works</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/about-us#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Loans -->
+        <div>
+          <h4 class="footer-heading">Loans</h4>
+          <ul class="footer-links">
+            <li><a href="/personal-loan">Personal Loan</a></li>
+            <li><a href="/eligibility">Loan Eligibility</a></li>
+            <li><a href="/calculator">Loan Calculator</a></li>
+            <li><a href="/faq">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Legal -->
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/legal/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/legal/terms-and-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="/grievance-redressal">Grievance Redressal</a></li>
+            <li><a href="/legal/disclaimer">Disclaimer</a></li>
+            <li><a href="/legal/fair-practice-code">Fair Practices Code</a></li>
+            <li><a href="/legal/cancellation-refund">Cancellation &amp; Refund</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:care@clickmyloan.com">care@clickmyloan.com</a></li>
+            <li><a href="tel:18002667890">1800-266-7890 (Toll-Free)</a></li>
+            <li><a href="/contact-us">Customer Support Desk</a></li>
+            <li><span style="color:#94A3B8; font-size:0.8125rem; line-height:1.5;">ClickMyLoan Financial Technologies Pvt. Ltd., India</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Regulatory & LSP Disclaimer Box -->
+      <div class="footer-compliance-box">
+        <h4>Regulatory Trust &amp; Lending Service Provider (LSP) Disclosure</h4>
+        <p style="margin-bottom:8px;">
+          ClickMyLoan operates as a Digital Lending Platform and Lending Service Provider (LSP) in accordance with the Reserve Bank of India (RBI) Guidelines on Digital Lending. ClickMyLoan does not directly issue loans or collect deposits. All loan sanctions, interest rate determinations, and credit disbursements are executed exclusively by our regulated partner Banks and RBI-registered Non-Banking Financial Companies (NBFCs): <strong>[Regulated Lending Partners &amp; NBFC Certificate Details to be confirmed by ClickMyLoan team]</strong>.
+        </p>
+        <p style="margin-bottom:8px;">
+          <strong>Zero Advance Fee Policy:</strong> ClickMyLoan strictly maintains a zero advance fee policy. We never solicit advance payments, cash transfers, or security deposits for loan approvals. Applicable processing fee (8.99% + GST) is deducted directly from the sanctioned loan disbursal as specified in the Key Fact Statement (KFS). Foreclosure charges are 0%.
+        </p>
+        <p style="margin-top:8px; margin-bottom:0;">
+          <strong>Statutory Look-Up Period:</strong> Borrowers are entitled to a mandatory cooling-off / look-up period during which they can exit the digital loan without paying any penalty, as mandated under RBI Digital Lending Guidelines.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ClickMyLoan Financial Technologies Pvt. Ltd. All rights reserved.</p>
+        <p>Built with integrity, security, and transparency for India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action System (Section 17 Specification) -->
+  <aside class="floating-actions-container" aria-label="Quick Actions">
+    <a href="/calculator" class="floating-action-btn floating-action-left" id="floating-pay-emi" aria-label="Pay EMI / Loan Repayment">
+      <span class="floating-pulse-indicator"></span>
+      <span class="floating-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg></span>
+      <span class="floating-text">Pay EMI</span>
+    </a>
+    <a href="/contact-us" class="floating-action-btn floating-action-right" id="floating-support-chat" aria-label="Customer Support &amp; Chat">
+      <span class="floating-pulse-indicator"></span>
+      <span class="floating-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+      <span class="floating-text">Support / Chat</span>
+    </a>
+  </aside>
+
+  <!-- Scripts -->
+  <script>window.__REL_PREFIX__ = "..";</script>
+  <script src="../public/js/analytics.js" defer></script>
+  <script src="../public/js/calculator.js" defer></script>
+  <script src="../public/js/eligibility.js" defer></script>
+  <script src="../public/js/faq.js" defer></script>
+  <script src="../public/js/grievance.js" defer></script>
+  <script src="../public/js/apply.js" defer></script>
+  <script src="../public/js/main.js" defer></script>
+</body>
+</html>
