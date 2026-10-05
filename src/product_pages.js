@@ -1426,7 +1426,7 @@ export function getAboutUsPageContent(relPrefix = '..') {
         <!-- Front Side -->
         <div class="flip-card-front">
           ${m.photo 
-            ? `<img src="${relPrefix}/assets/teams/${m.photo}" alt="${m.name}" class="profile-img" loading="lazy" width="130" height="130">`
+            ? `<img src="/assets/teams/${m.photo}" alt="${m.name}" class="profile-img" loading="lazy" width="130" height="130">`
             : `<div class="profile-img-avatar">${m.initials || m.name.slice(0, 2).toUpperCase()}</div>`
           }
           <h3 class="team-name">${m.name}</h3>

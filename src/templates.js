@@ -73,7 +73,7 @@ function getHeaderTopBarHtml() {
 function getBrandLogoHtml(relPrefix = '.') {
   return `
     <a href="/" class="brand-logo" aria-label="ClickMyLoan Homepage">
-      <img src="${relPrefix}/assets/logo.png" alt="ClickMyLoan" class="brand-logo-img" width="160" height="58">
+      <img src="/assets/logo.png" alt="ClickMyLoan" class="brand-logo-img" width="160" height="58">
     </a>
   `;
 }
@@ -177,21 +177,22 @@ function renderPage({
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
   <meta property="og:url" content="${canonicalUrl}">
-  <meta property="og:image" content="${BASE_URL}/public/assets/clickmyloan-og.svg">
+  <meta property="og:image" content="${BASE_URL}/assets/clickmyloan-og.svg">
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${title}">
   <meta name="twitter:description" content="${description}">
-  <meta name="twitter:image" content="${BASE_URL}/public/assets/clickmyloan-og.svg">
+  <meta name="twitter:image" content="${BASE_URL}/assets/clickmyloan-og.svg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="${relPrefix}/favicon.png">
-  <link rel="icon" type="image/svg+xml" href="${relPrefix}/favicon.svg">
-  <link rel="apple-touch-icon" href="${relPrefix}/favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- Main Stylesheet (Resolves in both HTTP server and direct file:// opening) -->
-  <link rel="stylesheet" href="${relPrefix}/public/css/style.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/styles.css">
 
   ${schemaTag}
 </head>
@@ -424,7 +425,7 @@ function renderPage({
           <div class="footer-brand-title">
             <a href="/" aria-label="ClickMyLoan Homepage" class="footer-brand-logo">
               <div class="footer-logo-wrap">
-                <img src="${relPrefix}/assets/logo.png" alt="ClickMyLoan" class="footer-logo-img" width="140" height="50">
+                <img src="/assets/logo.png" alt="ClickMyLoan" class="footer-logo-img" width="140" height="50">
               </div>
             </a>
           </div>
@@ -521,14 +522,14 @@ function renderPage({
   </aside>
 
   <!-- Scripts -->
-  <script>window.__REL_PREFIX__ = "${relPrefix}";</script>
-  <script src="${relPrefix}/public/js/analytics.js" defer></script>
-  <script src="${relPrefix}/public/js/calculator.js" defer></script>
-  <script src="${relPrefix}/public/js/eligibility.js" defer></script>
-  <script src="${relPrefix}/public/js/faq.js" defer></script>
-  <script src="${relPrefix}/public/js/grievance.js" defer></script>
-  <script src="${relPrefix}/public/js/apply.js" defer></script>
-  <script src="${relPrefix}/public/js/main.js" defer></script>
+  <script>window.__REL_PREFIX__ = "";</script>
+  <script src="/js/analytics.js" defer></script>
+  <script src="/js/calculator.js" defer></script>
+  <script src="/js/eligibility.js" defer></script>
+  <script src="/js/faq.js" defer></script>
+  <script src="/js/grievance.js" defer></script>
+  <script src="/js/apply.js" defer></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>`;
 }

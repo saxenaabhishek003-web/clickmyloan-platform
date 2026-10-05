@@ -9,8 +9,5 @@
     "dev": "node server.js",
     "audit": "node scripts/audit.js",
     "test": "node scripts/audit.js"
-  },
-  "devDependencies": {
-    "vite": "^5.4.14"
   }
 }

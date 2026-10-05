@@ -625,4 +625,23 @@ ${sitemapUrls}
 fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log('✓ Generated sitemap.xml');
 
+// Sync static assets to root directories (css, js, assets/images) for bulletproof Vercel & CDN resolution
+try {
+  if (fs.existsSync(path.join(DIST_DIR, 'public', 'css'))) {
+    fs.cpSync(path.join(DIST_DIR, 'public', 'css'), path.join(DIST_DIR, 'css'), { recursive: true, force: true });
+  }
+  if (fs.existsSync(path.join(DIST_DIR, 'public', 'js'))) {
+    fs.cpSync(path.join(DIST_DIR, 'public', 'js'), path.join(DIST_DIR, 'js'), { recursive: true, force: true });
+  }
+  if (fs.existsSync(path.join(DIST_DIR, 'public', 'assets', 'images'))) {
+    fs.cpSync(path.join(DIST_DIR, 'public', 'assets', 'images'), path.join(DIST_DIR, 'assets', 'images'), { recursive: true, force: true });
+  }
+  if (fs.existsSync(path.join(DIST_DIR, 'public', 'assets', 'clickmyloan-og.svg'))) {
+    fs.copyFileSync(path.join(DIST_DIR, 'public', 'assets', 'clickmyloan-og.svg'), path.join(DIST_DIR, 'assets', 'clickmyloan-og.svg'));
+  }
+  console.log('✓ Synced static asset bundles (css/, js/, assets/images)');
+} catch (e) {
+  console.warn('⚠️ Asset sync notice:', e.message);
+}
+
 console.log(`\n🎉 ClickMyLoan site generation completed successfully! Total ${count} pages built.`);

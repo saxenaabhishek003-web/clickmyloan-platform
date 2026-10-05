@@ -289,7 +289,7 @@ export function getHomepageContent() {
 
               <!-- Human Financial Lifestyle Photo -->
               <div class="hero-image-card">
-                <img src="./public/assets/images/hero-indian-professional.jpg" alt="Confident young Indian professional managing finances on smartphone" class="hero-human-img" width="560" height="420" loading="eager">
+                <img src="/assets/images/hero-indian-professional.jpg" alt="Confident young Indian professional managing finances on smartphone" class="hero-human-img" width="560" height="420" loading="eager">
               </div>
 
               <!-- Overlapping Floating FinTech Application / Calculator Widget -->
@@ -664,7 +664,7 @@ export function getHomepageContent() {
         <div class="lifestyle-grid">
           <div class="lifestyle-image-col">
             <div class="lifestyle-visual-wrap">
-              <img src="./public/assets/images/lifestyle-approval.jpg" alt="Relieved Indian couple celebrating loan approval on smartphone" class="lifestyle-img" width="560" height="420" loading="lazy">
+              <img src="/assets/images/lifestyle-approval.jpg" alt="Relieved Indian couple celebrating loan approval on smartphone" class="lifestyle-img" width="560" height="420" loading="lazy">
               
               <!-- Floating Overlaid Approval Card -->
               <div class="lifestyle-approval-card" aria-label="Sample Loan Approval">
@@ -1193,7 +1193,7 @@ export function getHomepageContent() {
           <div class="flip-card" tabindex="0" onclick="this.classList.toggle('is-flipped')" aria-label="Profile of Kabir Chaudhary, Founder / CEO">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/teams/kabeer.jpeg" alt="Kabir Chaudhary" class="profile-img" loading="lazy" width="130" height="130">
+                <img src="/assets/teams/kabeer.jpeg" alt="Kabir Chaudhary" class="profile-img" loading="lazy" width="130" height="130">
                 <h3 class="team-name">Kabir Chaudhary</h3>
                 <p class="team-role">Founder / CEO</p>
                 <span class="experience-badge">14 Years Experience</span>
@@ -1219,7 +1219,7 @@ export function getHomepageContent() {
           <div class="flip-card" tabindex="0" onclick="this.classList.toggle('is-flipped')" aria-label="Profile of Apoorve Bansal, Co-Founder">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/teams/apoorv.jpeg" alt="Apoorve Bansal" class="profile-img" loading="lazy" width="130" height="130">
+                <img src="/assets/teams/apoorv.jpeg" alt="Apoorve Bansal" class="profile-img" loading="lazy" width="130" height="130">
                 <h3 class="team-name">Apoorve Bansal</h3>
                 <p class="team-role">Co-Founder</p>
                 <span class="experience-badge">10 Years Experience</span>
@@ -1242,7 +1242,7 @@ export function getHomepageContent() {
           <div class="flip-card" tabindex="0" onclick="this.classList.toggle('is-flipped')" aria-label="Profile of Aman Kumar, Chief Operating Officer">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/teams/aman.jpeg" alt="Aman Kumar" class="profile-img" loading="lazy" width="130" height="130">
+                <img src="/assets/teams/aman.jpeg" alt="Aman Kumar" class="profile-img" loading="lazy" width="130" height="130">
                 <h3 class="team-name">Aman Kumar</h3>
                 <p class="team-role">Chief Operating Officer</p>
                 <span class="experience-badge">5 Years Experience</span>
@@ -1290,7 +1290,7 @@ export function getHomepageContent() {
           <div class="flip-card" tabindex="0" onclick="this.classList.toggle('is-flipped')" aria-label="Profile of Nisha, Head of Talent Acquisition">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/teams/ishika.png" alt="Nisha" class="profile-img" loading="lazy" width="130" height="130">
+                <img src="/assets/teams/ishika.png" alt="Nisha" class="profile-img" loading="lazy" width="130" height="130">
                 <h3 class="team-name">Nisha</h3>
                 <p class="team-role">Head of Talent Acquisition</p>
                 <span class="experience-badge">People &amp; Culture</span>
@@ -1312,7 +1312,7 @@ export function getHomepageContent() {
           <div class="flip-card" tabindex="0" onclick="this.classList.toggle('is-flipped')" aria-label="Profile of Rahul Kumar, Head of Collections">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/teams/rahul.jpg" alt="Rahul Kumar" class="profile-img" loading="lazy" width="130" height="130">
+                <img src="/assets/teams/rahul.jpg" alt="Rahul Kumar" class="profile-img" loading="lazy" width="130" height="130">
                 <h3 class="team-name">Rahul Kumar</h3>
                 <p class="team-role">Head of Collections</p>
                 <span class="experience-badge">12 Years Experience</span>
@@ -1335,7 +1335,7 @@ export function getHomepageContent() {
           <div class="flip-card" tabindex="0" onclick="this.classList.toggle('is-flipped')" aria-label="Profile of Auro, Data Scientist">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/teams/suraj.jpeg" alt="Auro" class="profile-img" loading="lazy" width="130" height="130">
+                <img src="/assets/teams/suraj.jpeg" alt="Auro" class="profile-img" loading="lazy" width="130" height="130">
                 <h3 class="team-name">Auro</h3>
                 <p class="team-role">Data Scientist</p>
                 <span class="experience-badge">5 Years Experience</span>
@@ -1380,7 +1380,7 @@ export function getHomepageContent() {
           <div class="flip-card" tabindex="0" onclick="this.classList.toggle('is-flipped')" aria-label="Profile of Ajay Kumar, Head of Credit">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="./assets/teams/ajay.png" alt="Ajay Kumar" class="profile-img" loading="lazy" width="130" height="130">
+                <img src="/assets/teams/ajay.png" alt="Ajay Kumar" class="profile-img" loading="lazy" width="130" height="130">
                 <h3 class="team-name">Ajay Kumar</h3>
                 <p class="team-role">Head of Credit</p>
                 <span class="experience-badge">Credit Leadership</span>
@@ -1709,7 +1709,7 @@ export function getHomepageContent() {
           </div>
           <div class="final-cta-visual">
             <div class="final-cta-img-wrap">
-              <img src="./public/assets/images/hero-fintech-app.jpg" alt="ClickMyLoan Digital Lending App on Smartphone" class="final-cta-img" width="380" height="340" loading="lazy">
+              <img src="/assets/images/hero-fintech-app.jpg" alt="ClickMyLoan Digital Lending App on Smartphone" class="final-cta-img" width="380" height="340" loading="lazy">
               <!-- Floating elements -->
               <div class="cta-float-badge float-rupee-cta" aria-hidden="true">₹</div>
               <div class="cta-float-badge float-percent-cta" aria-hidden="true">%</div>

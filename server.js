@@ -150,6 +150,20 @@ const server = http.createServer((req, res) => {
   fs.stat(filePath, (err, stats) => {
     // If not found, check if it's a directory with index.html or needs clean URL resolution
     if (err) {
+      // Fallback A: Check inside public/ directory if requested without /public/
+      const publicAltPath = path.join(PUBLIC_DIR, 'public', pathname);
+      if (fs.existsSync(publicAltPath) && fs.statSync(publicAltPath).isFile()) {
+        return serveFile(publicAltPath, req, res);
+      }
+
+      // Fallback B: Check at root if requested with /public/ prefix
+      if (pathname.startsWith('/public/')) {
+        const strippedPath = path.join(PUBLIC_DIR, pathname.replace(/^\/public/, ''));
+        if (fs.existsSync(strippedPath) && fs.statSync(strippedPath).isFile()) {
+          return serveFile(strippedPath, req, res);
+        }
+      }
+
       // 1. Try appending /index.html
       const dirIndexPath = path.join(filePath, 'index.html');
       if (fs.existsSync(dirIndexPath)) {
